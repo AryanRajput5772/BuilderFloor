@@ -1,0 +1,135 @@
+/* Layout */
+.pd-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.pd-left {
+  width: 70%;
+}
+.pd-right {
+  width: 30%;
+}
+
+/* Image */
+.pd-main-image {
+  position: relative;
+}
+
+.pd-main-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Badges */
+.pd-badge {
+  position: absolute;
+  top: 10px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: white;
+}
+
+.pd-featured {
+  left: 10px;
+  background: orange;
+}
+.pd-verified {
+  right: 10px;
+  background: green;
+}
+
+/* Header */
+.pd-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.pd-price {
+  color: #14b8a6;
+  font-size: 22px;
+}
+
+/* Features */
+.pd-features {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* Specs */
+.pd-specs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* Section */
+.pd-section {
+  margin-top: 30px;
+}
+
+.pd-section-title {
+  margin-bottom: 10px;
+}
+
+/* Amenities */
+.pd-amenities {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Floor */
+.pd-floor-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Map */
+.pd-map {
+  height: 200px;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sidebar */
+.pd-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.pd-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pd-btn-primary {
+  background: #14b8a6;
+  color: white;
+}
+
+/* EMI */
+.pd-emi-box {
+  background: linear-gradient(to right, #14b8a6, orange);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Safety */
+.pd-safety {
+  background: #e6fffa;
+}

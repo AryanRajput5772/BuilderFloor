@@ -161,3 +161,15 @@ closeBtn.addEventListener("click", function () {
   loginModal.style.display = "none";
   document.body.style.overflow = "visible"; // Enable background scrolling when modal is closed
 });
+
+///////whislist///////
+document.querySelectorAll(".wishlist").forEach((wrapper) => {
+  wrapper.addEventListener("click", () => {
+    const icon = wrapper.querySelector("i");
+
+    icon.classList.toggle("fa-solid");
+    icon.classList.toggle("fa-regular");
+
+    wrapper.classList.toggle("active");
+  });
+});

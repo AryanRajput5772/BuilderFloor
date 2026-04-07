@@ -246,10 +246,10 @@ select {
   font-weight: 400;
 }
 .featured p {
-  margin-bottom: 26px;
+  margin-bottom: 15px;
   font-size: 15px;
   font-weight: 400;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 /* Grid */
@@ -375,34 +375,65 @@ select {
   transition: 0.3s;
 }
 
-/* Image */
+/* Image Box */
 .image-box {
   position: relative;
+
+  overflow: hidden;
 }
-.image-box img {
-  transition: all ease 0.7s;
-  width: 100%;
-  object-fit: cover;
-}
-.image-box:hover img {
-  scale: 1.1;
-}
+
 .image-box img {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  overflow: hidden;
+  display: block;
+  transition: transform 0.7s ease;
 }
 
-/* Tag */
+.image-box:hover img {
+  transform: scale(1.1);
+}
+
+/* Badges (Top Left) */
+.badges {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.featuredBadge {
+  background: #ff6b2c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.verifiedBadge {
+  background: #16a34a;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Bottom Tag */
 .tag {
   position: absolute;
   bottom: 12px;
   left: 12px;
-  background: #f1f1f1;
+  background: #ffffff;
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 13px;
+  color: #000000;
 }
 
 /* Wishlist */
@@ -411,15 +442,29 @@ select {
   top: 12px;
   right: 12px;
   background: #fff;
-  padding: 6px 10px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
-  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+}
+
+.wishlist i {
+  font-size: 16px;
+  color: black;
+  transition: 0.3s;
+}
+
+.wishlist.active i {
+  color: red;
 }
 
 /* Content */
 .card-content {
   padding: 15px;
+  padding-top: 45px;
 }
 
 .card-content h3 {
@@ -452,7 +497,13 @@ select {
   font-size: 14px;
   margin-bottom: 10px;
 }
+.details span {
+  color: #8e8e8e;
+}
 
+.fa-building {
+  margin-right: 2px;
+}
 /* Extra */
 .extra {
   font-size: 14px;
@@ -462,8 +513,14 @@ select {
 
 .builder {
   font-size: 14px;
-  color: #777;
+  color: #000000;
   margin-bottom: 12px;
+}
+
+.hr-tag {
+  border: none;
+  border-top: 1px solid #d4d4d4;
+  margin-bottom: 18px;
 }
 
 /* Buttons */
@@ -480,6 +537,13 @@ select {
   background: transparent;
   border-radius: 6px;
   cursor: pointer;
+}
+.view a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .view:hover {
   background: #16c3b6;
