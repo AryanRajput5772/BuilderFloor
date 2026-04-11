@@ -11,8 +11,9 @@ body {
   background-color: #e5e7eb;
   width: 397px;
   align-items: center;
-  height: 39px;
+  height: 43px;
   border-radius: 14px;
+  padding: 0px 4px;
 }
 
 /* BUTTON */
@@ -73,10 +74,10 @@ body {
 }
 .plot-contact1 {
   flex: 1;
-  background: #ff7a45;
-  color: #fff;
+  background-color: #ff6b35 !important;
+  color: #fff !important;
   border: none;
-  padding: 12px;
+  padding: 5px 18px;
   border-radius: 8px;
   cursor: pointer;
   height: min-content;
@@ -100,6 +101,17 @@ body {
   border-left: 5px solid #ff7a45 !important;
   padding: 25px;
   border: 1px solid #0000001c;
-
+  width: 48%;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+@media screen and (max-width: 968px) {
+  .plot-card1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 508px) {
+  .plot-contact1 {
+    padding: 5px;
+    font-size: 13px;
+  }
 }

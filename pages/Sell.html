@@ -6,17 +6,23 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous" />
     <link rel="icon" href="../assets/images/icon_1.png" type="image/png" />
-
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/Collab.css" />
+    <link rel="stylesheet" href="../assets/css/Buy.css" />
     <link rel="stylesheet" href="../assets/css/Sell.css" />
     <title>Document</title>
   </head>
-  <style></style>
   <body>
     <!-- Top Bar -->
-    <div class="topbar">
-      <div class="left">
+    <div
+      class="topbar d-flex flex-column flex-md-row justify-content-between align-items-center px-3 py-2 text-center text-md-start">
+      <div class="left mb-2 mb-md-0">
         <i class="fa-solid fa-phone"></i> +91-99710 19000 &nbsp;&nbsp; ✉
         contact@builderfloor.in
       </div>
@@ -27,59 +33,90 @@
     </div>
 
     <!-- Navbar -->
-    <div class="navbar">
-      <div class="logo">
+    <div class="navbar navbar-expand-md navbar-light px-3 py-2">
+      <!-- Logo -->
+      <div class="logo ms-3">
         <a href="../index.html">
-          <img src="../assets/images/logo_.png" alt="BuilderFloor.in" />
+          <img src="../assets/images/logo_.png" class="img-fluid" />
         </a>
       </div>
 
-      <ul class="menu">
-        <li><a href="../pages/Buy.html">Buy</a></li>
-        <li><a href="../pages/Sell.html">Sell</a></li>
-        <li><a href="../pages/Rent.html">Rent</a></li>
-        <li><a href="../pages/Collab.html">Collaboration</a></li>
-        <li><a href="../pages/Sell.html">Post Property</a></li>
-        <li><a href="../pages/ContactUs.html">Contact Us</a></li>
-      </ul>
-      <a href="../pages/Sell.html">
-        <button class="post-btn">Post Free Property Ad</button>
-      </a>
+      <!-- Toggle -->
+      <button
+        class="navbar-toggler border-0 shadow-none p-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="menu">
+        <!-- Center Wrapper -->
+        <div class="w-100 d-flex flex-column flex-md-row align-items-center">
+          <!-- Menu (PERFECT CENTER) -->
+          <ul
+            class="menu d-flex flex-column flex-md-row align-items-center gap-2 gap-md-4 list-unstyled mb-2 mb-md-0 text-center mx-md-auto">
+            <li><a href="../pages/Buy.html">Buy</a></li>
+            <li><a href="../pages/Sell.html">Sell</a></li>
+            <li><a href="../pages/Rent.html">Rent</a></li>
+            <li><a href="../pages/Collab.html">Collaboration</a></li>
+            <li><a href="../pages/Sell.html">Post Property</a></li>
+            <li><a href="../pages/ContactUs.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Button (RIGHT SIDE) -->
+        <a
+          href="../pages/Sell.html"
+          class="mt-3 mt-md-0 ms-md-auto text-center">
+          <button class="post-btn px-4 py-2 text-nowrap w-100 w-md-auto">
+            Post Free Property Ad
+          </button>
+        </a>
+      </div>
     </div>
     <section class="post-hero">
-      <div class="hero-content">
+      <div class="hero-content text-start">
         <h1>List Your Property</h1>
         <p>Reach thousands of verified buyers across India</p>
       </div>
     </section>
 
-    <section class="features">
-      <div class="feature-box">
-        <div class="icon green"><i class="fa-regular fa-circle-check"></i></div>
-        <h3>Free Property Listing</h3>
-        <p>No charges for basic listing</p>
-      </div>
-
-      <div class="feature-box">
-        <div class="icon orange">
-          <i class="fa-regular fa-circle-check"></i>
+    <section class="features container">
+      <div
+        class="d-flex flex-column flex-md-row flex-md-nowrap gap-3 justify-content-md-between">
+        <div class="feature-box col-12 col-md-auto">
+          <div class="icon green">
+            <i class="fa-regular fa-circle-check"></i>
+          </div>
+          <h3>Free Property Listing</h3>
+          <p>No charges for basic listing</p>
         </div>
-        <h3>10,000+ Daily Visitors</h3>
-        <p>Maximum exposure</p>
-      </div>
 
-      <div class="feature-box">
-        <div class="icon green"><i class="fa-regular fa-circle-check"></i></div>
-        <h3>Verified Buyers</h3>
-        <p>Connect with serious buyers</p>
-      </div>
-
-      <div class="feature-box">
-        <div class="icon orange">
-          <i class="fa-regular fa-circle-check"></i>
+        <div class="feature-box col-12 col-md-auto">
+          <div class="icon orange">
+            <i class="fa-regular fa-circle-check"></i>
+          </div>
+          <h3>10,000+ Daily Visitors</h3>
+          <p>Maximum exposure</p>
         </div>
-        <h3>Expert Support</h3>
-        <p>Get help anytime</p>
+
+        <div class="feature-box col-12 col-md-auto">
+          <div class="icon green">
+            <i class="fa-regular fa-circle-check"></i>
+          </div>
+          <h3>Verified Buyers</h3>
+          <p>Connect with serious buyers</p>
+        </div>
+
+        <div class="feature-box col-12 col-md-auto">
+          <div class="icon orange">
+            <i class="fa-regular fa-circle-check"></i>
+          </div>
+          <h3>Expert Support</h3>
+          <p>Get help anytime</p>
+        </div>
       </div>
     </section>
     <!-- -------------------------------------------------------------------------------------------------------------------- -->
@@ -108,44 +145,46 @@
       <div class="form-card" id="form1">
         <h2>Property Details</h2>
 
-        <form class="form-grid">
-          <!-- Property Type -->
-          <div class="form-group">
-            <label>Property Type *</label>
-            <select required>
-              <option value="">Select property type</option>
-              <option>Builder Floor</option>
-              <option>Apartment/Flat</option>
-              <option>Independent House/Villa</option>
-              <option>Penthouse</option>
-              <option>Plot/Land</option>
-              <option>Commercial Property</option>
-            </select>
-          </div>
+        <form
+          class="form-grid row d-flex flex-md-nowrap justify-content-center">
+          <div class="row">
+            <!-- Property Type -->
+            <div class="form-group col-12 col-md-6">
+              <label>Property Type *</label>
+              <select required>
+                <option value="">Select property type</option>
+                <option>Builder Floor</option>
+                <option>Apartment/Flat</option>
+                <option>Independent House/Villa</option>
+                <option>Penthouse</option>
+                <option>Plot/Land</option>
+                <option>Commercial Property</option>
+              </select>
+            </div>
 
-          <!-- Property For -->
-          <div class="form-group">
-            <label>Property For *</label>
-            <select required>
-              <option value="">Select</option>
-              <option>Sale</option>
-              <option>Rent</option>
-              <option>Collaboration</option>
-            </select>
-          </div>
+            <!-- Property For -->
+            <div class="form-group col-12 col-md-6">
+              <label>Property For *</label>
+              <select required>
+                <option value="">Select</option>
+                <option>Sale</option>
+                <option>Rent</option>
+                <option>Collaboration</option>
+              </select>
+            </div>
 
-          <!-- Title -->
-          <div class="form-group full">
-            <label>Property Title *</label>
-            <input
-              type="text"
-              required
-              placeholder="e.g., Spacious 3 BHK Builder Floor in South Delhi" />
-          </div>
+            <!-- Title -->
+            <div class="form-group col-12">
+              <label>Property Title *</label>
+              <input
+                type="text"
+                required
+                placeholder="e.g., Spacious 3 BHK Builder Floor in South Delhi" />
+            </div>
 
-          <!-- Group of 3 -->
-          <div class="grpof3">
-            <div class="form-group Bhk">
+            <!-- Group of 3 -->
+
+            <div class="form-group col-12 col-md-4">
               <label>BHK *</label>
               <select required>
                 <option value="">Select</option>
@@ -158,7 +197,7 @@
               </select>
             </div>
 
-            <div class="form-group Bathroom">
+            <div class="form-group col-12 col-md-4">
               <label>Bathrooms *</label>
               <select required>
                 <option value="">Select</option>
@@ -170,7 +209,7 @@
               </select>
             </div>
 
-            <div class="form-group Furnishing">
+            <div class="form-group col-12 col-md-4">
               <label>Furnishing *</label>
               <select required>
                 <option value="">Select</option>
@@ -179,33 +218,35 @@
                 <option>Unfurnished</option>
               </select>
             </div>
-          </div>
 
-          <!-- Area -->
-          <div class="form-group">
-            <label>Built-up Area (sq ft) *</label>
-            <input type="number" required placeholder="0" />
-          </div>
+            <!-- Area -->
+            <div class="form-group col-12 col-md-6">
+              <label>Built-up Area (sq ft) *</label>
+              <input type="number" required placeholder="0" />
+            </div>
 
-          <!-- Floor -->
-          <div class="form-group">
-            <label>Floor Number</label>
-            <input type="text" placeholder="e.g., 2nd Floor or Ground Floor" />
-          </div>
+            <!-- Floor -->
+            <div class="form-group col-12 col-md-6">
+              <label>Floor Number</label>
+              <input
+                type="text"
+                placeholder="e.g., 2nd Floor or Ground Floor" />
+            </div>
 
-          <!-- Description -->
-          <div class="form-group full">
-            <label>Property Description *</label>
-            <textarea
-              required
-              placeholder="Describe your property - key features, nearby landmarks, amenities...."></textarea>
-          </div>
+            <!-- Description -->
+            <div class="form-group col-12">
+              <label>Property Description *</label>
+              <textarea
+                required
+                placeholder="Describe your property..."></textarea>
+            </div>
 
-          <!-- Submit -->
-          <div class="form-footer">
-            <button type="button" class="next-btn" id="next-btn1">
-              Next: Pricing & Features
-            </button>
+            <!-- Submit -->
+            <div class="form-footer col-4 ms-auto">
+              <button type="button" class="next-btn w-75" id="next-btn1">
+                Next: Pricing & Features
+              </button>
+            </div>
           </div>
         </form>
       </div>
@@ -214,49 +255,51 @@
       <div class="form-card" id="form2">
         <h2>Pricing & Features</h2>
 
-        <form class="form-grid">
-          <!-- Expected Price -->
-          <div class="form-group">
-            <label>Expected Price *</label>
-            <div class="price-input">
-              <span>₹</span>
-              <input
-                id="ExpPrice"
-                type="number"
-                placeholder="e.g., 35000000"
-                required />
+        <form
+          class="form-grid row d-flex flex-md-nowrap justify-content-center">
+          <div class="row">
+            <!-- Expected Price -->
+            <div class="form-group col-12 col-md-6">
+              <label>Expected Price *</label>
+              <div class="price-input">
+                <span>₹</span>
+                <input
+                  id="ExpPrice"
+                  type="number"
+                  placeholder="e.g., 35000000"
+                  required />
+              </div>
+              <small class="small-alert">Enter amount in rupees (₹)</small>
             </div>
-            <small class="small-alert">Enter amount in rupees (₹)</small>
-          </div>
 
-          <!-- Price Negotiable -->
-          <div class="form-group negotiable">
-            <label>Price Negotiable?</label>
-            <select required>
-              <option value="">Select</option>
-              <option>Yes, Negotiable</option>
-              <option>No, Fixed Price</option>
-            </select>
-          </div>
+            <!-- Price Negotiable -->
+            <div class="form-group negotiable col-12 col-md-6">
+              <label>Price Negotiable ?</label>
+              <select required>
+                <option value="">Select</option>
+                <option>Yes, Negotiable</option>
+                <option>No, Fixed Price</option>
+              </select>
+            </div>
 
-          <!-- Location Heading -->
-          <div class="form-group full">
-            <h3 class="Location-heading">Location Details *</h3>
-          </div>
+            <!-- Location Heading -->
+            <div class="form-group full col-12">
+              <h3 class="Location-heading">Location Details *</h3>
+            </div>
 
-          <!-- Project Name -->
-          <div class="form-group">
-            <input type="text" placeholder="Building/Project Name" />
-          </div>
+            <!-- Project Name -->
+            <div class="form-group col-12 col-md-6 mb-2 mb-md-3">
+              <input type="text" placeholder="Building/Project Name" />
+            </div>
 
-          <!-- Locality -->
-          <div class="form-group">
-            <input type="text" placeholder="Locality/Sector" />
-          </div>
+            <!-- Locality -->
+            <div class="form-group col-12 col-md-6 mb-2 mb-md-3">
+              <input type="text" placeholder="Locality/Sector" />
+            </div>
 
-          <!-- City -->
-          <div class="grpof3">
-            <div class="form-group city">
+            <!-- City -->
+
+            <div class="form-group city col-12 col-md-4 mb-2 mb-md-3">
               <select required>
                 <option value="">City *</option>
                 <option>Delhi</option>
@@ -269,37 +312,40 @@
             </div>
 
             <!-- State -->
-            <div class="form-group state">
+            <div class="form-group state col-12 col-md-4 mb-2 mb-md-3">
               <input type="text" placeholder="State" />
             </div>
 
             <!-- PIN -->
-            <div class="form-group pin">
+            <div class="form-group pin col-12 col-md-4 mb-2 mb-md-3">
               <input type="number" placeholder="PIN Code" />
             </div>
-          </div>
-          <!-- Features Heading -->
-          <div class="form-group full">
-            <h3 class="key-heading">Key Features</h3>
-          </div>
 
-          <!-- Features -->
-          <div class="features-grid full">
-            <label><input type="checkbox" /> Covered Parking</label>
-            <label><input type="checkbox" /> Power Backup</label>
-            <label><input type="checkbox" /> Gated Security</label>
+            <!-- Features Heading -->
+            <div class="form-group full col-12">
+              <h3 class="key-heading">Key Features</h3>
+            </div>
 
-            <label><input type="checkbox" /> Modular Kitchen</label>
-            <label><input type="checkbox" /> Lift Available</label>
-            <label><input type="checkbox" /> Park Facing</label>
-          </div>
+            <!-- Features -->
+            <div class="features-grid full col-12">
+              <label><input type="checkbox" /> Covered Parking</label>
+              <label><input type="checkbox" /> Power Backup</label>
+              <label><input type="checkbox" /> Gated Security</label>
 
-          <!-- Submit -->
-          <div class="form-footer">
-            <button type="button" class="back-btn" id="back-btn1">Back</button>
-            <button type="button" class="next-btn" id="next-btn2">
-              Next: Photos & Contact
-            </button>
+              <label><input type="checkbox" /> Modular Kitchen</label>
+              <label><input type="checkbox" /> Lift Available</label>
+              <label><input type="checkbox" /> Park Facing</label>
+            </div>
+
+            <!-- Submit -->
+            <div class="form-footer1 col-12 d-flex justify-content-between">
+              <button type="button" class="back-btn" id="back-btn1">
+                Back
+              </button>
+              <button type="button" class="next-btn" id="next-btn2">
+                Next: Photos & Contact
+              </button>
+            </div>
           </div>
         </form>
       </div>
@@ -307,95 +353,101 @@
 
       <div class="form-card" id="form3">
         <h2>Photos & Contact Information</h2>
-        <form class="form-grid">
-          <!-- Upload Section -->
-          <div class="form-group full">
-            <label>Upload Property Photos *</label>
+        <form
+          class="form-grid row d-flex flex-md-nowrap justify-content-center">
+          <div class="row">
+            <!-- Upload Section -->
+            <div class="form-group col-12">
+              <label>Upload Property Photos *</label>
 
-            <div class="upload-box">
-              <input
-                type="file"
-                multiple
-                accept="image/*"
-                hidden
-                id="fileUpload" />
+              <div class="upload-box">
+                <input
+                  type="file"
+                  multiple
+                  accept="image/*"
+                  hidden
+                  id="fileUpload" />
 
-              <label for="fileUpload" class="upload-label">
-                <i class="fa-regular fa-image"></i>
-                <p>Click to upload or drag and drop</p>
+                <label for="fileUpload" class="upload-label">
+                  <i class="fa-regular fa-image"></i>
+                  <p>Click to upload or drag and drop</p>
 
-                <span>PNG, JPG up to 10MB (Max 20 photos)</span>
-                <br />
-                <br />
+                  <span>PNG, JPG up to 10MB (Max 20 photos)</span>
+                  <br />
+                  <br />
 
-                <div class="upload-photos">
-                  <i class="fa-solid fa-arrow-up-from-bracket"></i>Choose Files
-                </div>
+                  <div class="upload-photos">
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>Choose
+                    Files
+                  </div>
+                </label>
+              </div>
+              <p>Properties with photos get 5x more views!</p>
+            </div>
+            <div class="hr"></div>
+
+            <!-- Contact Name -->
+            <div class="form-group col-12 col-md-6">
+              <label>Your Name *</label>
+              <input type="text" placeholder="Enter your full name" required />
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group col-12 col-md-6">
+              <label>Mobile Number *</label>
+              <input type="tel" placeholder="Enter Mobile number" required />
+            </div>
+
+            <!-- Email -->
+            <div class="form-group col-12 col-md-6">
+              <label>Email Address</label>
+              <input type="email" placeholder="Enter email" />
+            </div>
+
+            <!-- i am  -->
+
+            <div class="form-group col-12 col-md-6">
+              <label>I am *</label>
+              <select required>
+                <option value="">Select</option>
+                <option>Property Owner</option>
+                <option>Real Estate Agent</option>
+                <option>Builder/Developer</option>
+              </select>
+            </div>
+            <!-- Info Box -->
+            <div class="review-box">
+              <div class="icon green" id="review-icon">
+                <i class="fa-regular fa-circle-check"></i>
+              </div>
+
+              <div class="review-content">
+                <h4>Your listing will be reviewed</h4>
+                <p>
+                  Our team will verify your property details and publish it
+                  within 24 hours. You'll receive notifications on your
+                  registered mobile and email.
+                </p>
+              </div>
+            </div>
+
+            <!-- Terms Checkbox -->
+            <div class="terms col-12">
+              <label>
+                <input type="checkbox" required />
+                I agree to the Terms & Conditions and confirm that all
+                information provided is accurate
               </label>
             </div>
-            <p>Properties with photos get 5x more views!</p>
-          </div>
-          <div class="hr"></div>
-
-          <!-- Contact Name -->
-          <div class="form-group">
-            <label>Your Name *</label>
-            <input type="text" placeholder="Enter your full name" required />
-          </div>
-
-          <!-- Phone -->
-          <div class="form-group">
-            <label>Mobile Number *</label>
-            <input type="tel" placeholder="Enter Mobile number" required />
-          </div>
-
-          <!-- Email -->
-          <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" placeholder="Enter email" />
-          </div>
-
-          <!-- i am  -->
-
-          <div class="form-group">
-            <label>I am *</label>
-            <select required>
-              <option value="">Select</option>
-              <option>Property Owner</option>
-              <option>Real Estate Agent</option>
-              <option>Builder/Developer</option>
-            </select>
-          </div>
-          <!-- Info Box -->
-          <div class="review-box">
-            <div class="icon green" id="review-icon">
-              <i class="fa-regular fa-circle-check"></i>
+            <!-- Submit -->
+            <div class="form-footer1 col-12 d-flex justify-content-between">
+              <button type="button" class="back-btn" id="back-btn2">
+                Back
+              </button>
+              <button type="submit" class="submit-btn" id="submit-btn">
+                Submit Property Listing
+              </button>
             </div>
-
-            <div class="review-content">
-              <h4>Your listing will be reviewed</h4>
-              <p>
-                Our team will verify your property details and publish it within
-                24 hours. You'll receive notifications on your registered mobile
-                and email.
-              </p>
-            </div>
-          </div>
-
-          <!-- Terms Checkbox -->
-          <div class="terms">
-            <label>
-              <input type="checkbox" required />
-              I agree to the Terms & Conditions and confirm that all information
-              provided is accurate
-            </label>
-          </div>
-          <!-- Submit -->
-          <div class="form-footer">
-            <button type="button" class="back-btn" id="back-btn2">Back</button>
-            <button type="submit" class="submit-btn" id="submit-btn">
-              Submit Property Listing
-            </button>
           </div>
         </form>
       </div>
@@ -410,9 +462,10 @@
           </p>
         </div>
 
-        <div class="sell-plans">
+        <div
+          class="sell-plans row d-flex justify-content-center flex-md-nowrap">
           <!-- FREE -->
-          <div class="sell-card">
+          <div class="sell-card mb-3 col-12 col-md-4">
             <span class="sell-badge free-badge">Free</span>
 
             <div class="grp1">
@@ -431,7 +484,7 @@
           </div>
 
           <!-- FEATURED -->
-          <div class="sell-card featured">
+          <div class="sell-card featured mb-3 col-12 col-md-4">
             <span class="sell-badge featured-badge">Featured</span>
             <div class="grp1">
               <h3>Featured Listing</h3>
@@ -456,7 +509,7 @@
           </div>
 
           <!-- PREMIUM -->
-          <div class="sell-card premium">
+          <div class="sell-card premium mb-3 col-12 col-md-4">
             <span class="sell-badge premium-badge">Premium</span>
             <div class="grp1">
               <h3>Premium Listing</h3>
@@ -489,7 +542,6 @@
     </section>
 
     <!-- -------------------------------------------------------------------------------------------------------------------- -->
-
     <footer class="footer">
       <div class="footer-container">
         <!-- Left Column -->
@@ -498,10 +550,7 @@
             <img src="../assets/images/icon_2.png" alt="logo" /> BuilderFloor.in
           </h2>
 
-          <p class="tagline">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your
-            Property Partner
-          </p>
+          <p class="tagline">Your Property Partner</p>
 
           <p class="footer-desc">
             India's most trusted platform for builder floors, apartments, and
@@ -509,20 +558,24 @@
             across major cities.
           </p>
 
-          <p><i class="fa-solid fa-phone"></i> +91-9876543210</p>
+          <p class="footer-contact">
+            <i class="fa-solid fa-phone"></i> +91-9876543210
+          </p>
           <br />
-          <p><i class="fa-solid fa-envelope"></i> contact@builderfloor.in</p>
+          <p class="footer-email">
+            <i class="fa-solid fa-envelope"></i> contact@builderfloor.in
+          </p>
           <br />
-          <p>
+          <p class="footer-location">
             <i class="fa-solid fa-location-dot"></i>
             Connaught Place, New Delhi - 110001, India
           </p>
         </div>
 
         <!-- Quick Links -->
-        <div class="footer-col">
-          <h3>Quick Links</h3>
-          <ul>
+        <div class="footer-col col-12 col-md-10 text-start">
+          <h3 class="text-start">Quick Links</h3>
+          <ul class="list-unstyled ps-0">
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Terms & Conditions</a></li>
@@ -532,9 +585,9 @@
         </div>
 
         <!-- Property Types -->
-        <div class="footer-col">
+        <div class="footer-col col-12 col-md-10 text-start">
           <h3>Property Types</h3>
-          <ul>
+          <ul class="list-unstyled ps-0">
             <li><a href="#">Builder Floors</a></li>
             <li><a href="#">Apartments</a></li>
             <li><a href="#">Independent Houses</a></li>
@@ -544,9 +597,9 @@
         </div>
 
         <!-- Popular Cities -->
-        <div class="footer-col">
+        <div class="footer-col col-12 col-md-10 text-start">
           <h3>Popular Cities</h3>
-          <ul>
+          <ul class="list-unstyled ps-0">
             <li><a href="#">Delhi NCR</a></li>
             <li><a href="#">Mumbai</a></li>
             <li><a href="#">Bangalore</a></li>
@@ -797,5 +850,13 @@
     </div>
     <script src="../assets/js/script.js"></script>
     <script src="../assets/js/Sell.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"></script>
   </body>
 </html>

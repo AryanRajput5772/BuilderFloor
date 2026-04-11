@@ -25,7 +25,14 @@
   padding: 40px 20px;
   flex-wrap: wrap;
 }
-
+.flex-md-nowrap {
+  gap: 15rem !important;
+}
+@media screen and (max-width: 768px) {
+  .flex-md-nowrap {
+    gap: 1rem !important;
+  }
+}
 /* EACH BOX */
 .feature-box {
   text-align: center;
@@ -55,6 +62,10 @@
   color: #ff6b35;
 }
 
+.orange i {
+  color: #ff6b35;
+}
+
 /* TEXT */
 .feature-box h3 {
   font-size: 15px;
@@ -75,7 +86,7 @@
   }
 
   .post-hero {
-    padding: 40px 20px;
+    padding: 40px 0px;
   }
 
   .post-hero h1 {
@@ -98,7 +109,9 @@
   gap: 10px;
   color: #6b7280;
 }
-
+.step p {
+  margin-bottom: unset;
+}
 .step span {
   width: 35px;
   height: 35px;
@@ -108,6 +121,15 @@
   align-items: center;
   justify-content: center;
   font-weight: 100;
+}
+
+@media screen and (max-width: 508px) {
+  .step p {
+    display: none;
+  }
+  .step {
+    scale: 0.9;
+  }
 }
 
 .step.active span {
@@ -177,7 +199,7 @@
 .form-group select,
 .form-group textarea {
   padding: 12px;
-  border: 1px solid #d1d5db;
+  border: 1px solid #ffffff00;
   border-radius: 6px;
   font-size: 14px;
   outline: none;
@@ -208,8 +230,10 @@
 
 /* BUTTON */
 .form-footer {
-  margin-top: 30px;
+  margin-top: 59px;
   text-align: right;
+  padding: 0px 0px;
+  width: 300px;
 }
 
 .next-btn {
@@ -222,7 +246,6 @@
   font-size: 15px;
   position: relative;
   bottom: 5px;
-  left: 472px;
 }
 .next-btn:hover {
   background: #16c3b6;
@@ -238,7 +261,6 @@
   font-size: 15px;
   position: relative;
   bottom: 5px;
-  left: -162px;
 }
 .back-btn:hover {
   background: #ff6b3d;
@@ -257,7 +279,29 @@
   font-size: 15px;
   position: relative;
   bottom: 5px;
-  left: 472px;
+}
+@media (max-width: 508px) {
+  .next-btn {
+    padding: 7px 7px !important;
+
+    font-size: 13px;
+  }
+  .back-btn {
+    padding: 7px 20px !important;
+
+    font-size: 13px;
+  }
+  .submit-btn {
+    padding: 7px 8px !important;
+
+    font-size: 13px;
+  }
+  .form-footer1 .next-btn {
+    width: auto;
+  }
+  .form-footer {
+    width: 225px;
+  }
 }
 #form1 {
   display: block;
@@ -286,7 +330,7 @@
 .price-input {
   display: flex;
   gap: 10px;
-  border: 1px solid #d1d5db;
+  border: 1px solid #ffffff00;
   border-radius: 6px;
   padding: 0px 16px;
   align-items: center;
@@ -318,18 +362,14 @@
   font-size: 16px;
   color: #222;
   font-weight: 100;
-  margin-bottom: -17px;
+  margin-top: 15px;
 }
 .key-heading {
   font-size: 16px;
   color: #222;
   font-weight: 100;
-  margin-bottom: -13px;
-}
-.city,
-.state,
-.pin {
-  flex: 1;
+  margin-bottom: 12px;
+  margin-top: 27px;
 }
 
 .negotiable select:invalid {
@@ -343,6 +383,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px 40px;
+}
+@media (max-width: 568px) {
+  .features-grid {
+    display: block;
+  }
 }
 
 .features-grid label {
@@ -539,9 +584,15 @@
   max-width: 1000px;
   margin: auto;
   background: #f3f7fa;
-  padding: 40px;
+  padding: 40px 65px;
   border-radius: 12px;
   border: 1px solid #e5e7eb;
+}
+
+@media (max-width: 568px) {
+  .sell-container {
+    padding: 30px 30px;
+  }
 }
 
 /* TITLE */
@@ -564,8 +615,8 @@
 /* GRID */
 .sell-plans {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+
+  gap: 20px !important;
 }
 
 /* CARD */
@@ -628,6 +679,7 @@
 .fa-circle-check {
   color: #00c951;
   margin-right: 4px;
+  margin-left: 3px;
 }
 .free-badge {
   background: #14b8a6;
@@ -690,10 +742,10 @@
   border: 2px solid #14b8a6;
 }
 
-.tagline {
-  color: #94a3b8;
-  font-size: 14px;
-  margin-bottom: 15px;
-  position: relative;
-  left: 20px;
+.form-footer1 {
+  margin-top: 59px;
+  text-align: right;
+  padding: 0px 0px;
+
+  width: 100%;
 }

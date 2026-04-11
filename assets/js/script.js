@@ -193,3 +193,14 @@ function showSection(type) {
     buttons[1].classList.add("active");
   }
 }
+
+const toggler = document.querySelector(".navbar-toggler");
+const menu = document.getElementById("menu");
+
+menu.addEventListener("show.bs.collapse", function () {
+  toggler.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+});
+
+menu.addEventListener("hide.bs.collapse", function () {
+  toggler.innerHTML = '<span class="navbar-toggler-icon"></span>';
+});
