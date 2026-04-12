@@ -6,6 +6,11 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous" />
     <link rel="icon" href="../assets/images/icon_1.png" type="image/png" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/Buy.css" />
@@ -19,8 +24,9 @@
 
   <body>
     <!-- Top Bar -->
-    <div class="topbar">
-      <div class="left">
+    <div
+      class="topbar d-flex flex-column flex-md-row justify-content-between align-items-center px-3 py-2 text-center text-md-start">
+      <div class="left mb-2 mb-md-0">
         <i class="fa-solid fa-phone"></i> +91-99710 19000 &nbsp;&nbsp;
         <i class="fa-solid fa-envelope me-1"></i>
         contact@builderfloor.in
@@ -32,24 +38,48 @@
     </div>
 
     <!-- Navbar -->
-    <div class="navbar">
-      <div class="logo">
+    <div class="navbar navbar-expand-md navbar-light px-3 py-2">
+      <!-- Logo -->
+      <div class="logo ms-3">
         <a href="../index.html">
-          <img src="../assets/images/logo_.png" alt="BuilderFloor.in" />
+          <img src="../assets/images/logo_.png" class="img-fluid" />
         </a>
       </div>
 
-      <ul class="menu">
-        <li><a href="../pages/Buy.html">Buy</a></li>
-        <li><a href="../pages/Sell.html">Sell</a></li>
-        <li><a href="../pages/Rent.html">Rent</a></li>
-        <li><a href="../pages/Collab.html">Collaboration</a></li>
-        <li><a href="../pages/Sell.html">Post Property</a></li>
-        <li><a href="../pages/ContactUs.html">Contact Us</a></li>
-      </ul>
-      <a href="../pages/Sell.html">
-        <button class="post-btn">Post Free Property Ad</button>
-      </a>
+      <!-- Toggle -->
+      <button
+        class="navbar-toggler border-0 shadow-none p-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="menu">
+        <!-- Center Wrapper -->
+        <div class="w-100 d-flex flex-column flex-md-row align-items-center">
+          <!-- Menu (PERFECT CENTER) -->
+          <ul
+            class="menu d-flex flex-column flex-md-row align-items-center gap-2 gap-md-4 list-unstyled mb-2 mb-md-0 text-center mx-md-auto">
+            <li><a href="../pages/Buy.html">Buy</a></li>
+            <li><a href="../pages/Sell.html">Sell</a></li>
+            <li><a href="../pages/Rent.html">Rent</a></li>
+            <li><a href="../pages/Collab.html">Collaboration</a></li>
+            <li><a href="../pages/Sell.html">Post Property</a></li>
+            <li><a href="../pages/ContactUs.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Button (RIGHT SIDE) -->
+        <a
+          href="../pages/Sell.html"
+          class="mt-3 mt-md-0 ms-md-auto text-center">
+          <button class="post-btn px-4 py-2 text-nowrap w-100 w-md-auto">
+            Post Free Property Ad
+          </button>
+        </a>
+      </div>
     </div>
     <div class="pd-back">
       <i class="fa-solid fa-angle-left"></i>
@@ -145,29 +175,43 @@
           <hr />
 
           <!-- FEATURES -->
-          <div class="pd-features-row">
-            <div class="pd-feature">
-              <div class="pd-icon"><i class="fa-solid fa-bed"></i></div>
-              <h4>4</h4>
-              <p>Bedrooms</p>
-            </div>
+          <div class="container">
+            <div class="row text-center g-4">
+              <div class="col-6 col-md-3">
+                <div class="pd-feature">
+                  <div class="pd-icon"><i class="fa-solid fa-bed"></i></div>
+                  <h4>4</h4>
+                  <p>Bedrooms</p>
+                </div>
+              </div>
 
-            <div class="pd-feature">
-              <div class="pd-icon"><i class="fa-solid fa-bath"></i></div>
-              <h4>4</h4>
-              <p>Bathrooms</p>
-            </div>
+              <div class="col-6 col-md-3">
+                <div class="pd-feature">
+                  <div class="pd-icon"><i class="fa-solid fa-bath"></i></div>
+                  <h4>4</h4>
+                  <p>Bathrooms</p>
+                </div>
+              </div>
 
-            <div class="pd-feature">
-              <div class="pd-icon"><i class="fa-regular fa-square"></i></div>
-              <h4>2800 sq ft</h4>
-              <p>Carpet Area</p>
-            </div>
+              <div class="col-6 col-md-3">
+                <div class="pd-feature">
+                  <div class="pd-icon">
+                    <i class="fa-regular fa-square"></i>
+                  </div>
+                  <h4>2800 sq ft</h4>
+                  <p>Carpet Area</p>
+                </div>
+              </div>
 
-            <div class="pd-feature">
-              <div class="pd-icon"><i class="fa-solid fa-building"></i></div>
-              <h4>2nd Floor</h4>
-              <p>Floor</p>
+              <div class="col-6 col-md-3">
+                <div class="pd-feature">
+                  <div class="pd-icon">
+                    <i class="fa-solid fa-building"></i>
+                  </div>
+                  <h4>2nd Floor</h4>
+                  <p>Floor</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -210,67 +254,85 @@
         <div class="pd-Amentities-section">
           <h2 class="pd-section-title">Amenities</h2>
 
-          <div class="pd-amenities">
-            <div class="pd-amenity-card">
-              <div class="pd-amenity-icon"><i class="fa-solid fa-car"></i></div>
-              <h4>Covered Parking</h4>
-              <p>2 Cars</p>
+          <div class="row g-3 g-md-4">
+            <div class="col-6 col-md-3">
+              <div class="pd-amenity-card px-0">
+                <div class="pd-amenity-icon">
+                  <i class="fa-solid fa-car"></i>
+                </div>
+                <h4>Covered Parking</h4>
+                <p>2 Cars</p>
+              </div>
             </div>
 
-            <div class="pd-amenity-card">
-              <div class="pd-amenity-icon">
-                <i class="fa-solid fa-bolt"></i>
+            <div class="col-6 col-md-3">
+              <div class="pd-amenity-card px-0">
+                <div class="pd-amenity-icon">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h4>Power Backup</h4>
+                <p>Full 24/7</p>
               </div>
-              <h4>Power Backup</h4>
-              <p>Full 24/7</p>
             </div>
 
-            <div class="pd-amenity-card">
-              <div class="pd-amenity-icon">
-                <i class="fa-solid fa-shield"></i>
+            <div class="col-6 col-md-3">
+              <div class="pd-amenity-card px-0">
+                <div class="pd-amenity-icon">
+                  <i class="fa-solid fa-shield"></i>
+                </div>
+                <h4>Security</h4>
+                <p>24/7 Gated</p>
               </div>
-              <h4>Security</h4>
-              <p>24/7 Gated</p>
             </div>
 
-            <div class="pd-amenity-card">
-              <div class="pd-amenity-icon">
-                <i class="fa-solid fa-wind"></i>
+            <div class="col-6 col-md-3">
+              <div class="pd-amenity-card px-0">
+                <div class="pd-amenity-icon">
+                  <i class="fa-solid fa-wind"></i>
+                </div>
+                <h4>AC</h4>
+                <p>All Rooms</p>
               </div>
-              <h4>AC</h4>
-              <p>All Rooms</p>
             </div>
 
-            <div class="pd-amenity-card">
-              <div class="pd-amenity-icon">
-                <i class="fa-solid fa-wifi"></i>
+            <div class="col-6 col-md-3">
+              <div class="pd-amenity-card px-0">
+                <div class="pd-amenity-icon">
+                  <i class="fa-solid fa-wifi"></i>
+                </div>
+                <h4>Internet</h4>
+                <p>High Speed</p>
               </div>
-              <h4>Internet</h4>
-              <p>High Speed</p>
             </div>
 
-            <div class="pd-amenity-card">
-              <div class="pd-amenity-icon">
-                <i class="fa-solid fa-dumbbell"></i>
+            <div class="col-6 col-md-3">
+              <div class="pd-amenity-card px-0">
+                <div class="pd-amenity-icon">
+                  <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <h4>Gym</h4>
+                <p>Common Area</p>
               </div>
-              <h4>Gym</h4>
-              <p>Common Area</p>
             </div>
 
-            <div class="pd-amenity-card">
-              <div class="pd-amenity-icon">
-                <i class="fa-solid fa-tree"></i>
+            <div class="col-6 col-md-3">
+              <div class="pd-amenity-card px-0">
+                <div class="pd-amenity-icon">
+                  <i class="fa-solid fa-tree"></i>
+                </div>
+                <h4>Park Facing</h4>
+                <p>Green View</p>
               </div>
-              <h4>Park Facing</h4>
-              <p>Green View</p>
             </div>
 
-            <div class="pd-amenity-card">
-              <div class="pd-amenity-icon">
-                <i class="fa-solid fa-elevator"></i>
+            <div class="col-6 col-md-3">
+              <div class="pd-amenity-card px-0">
+                <div class="pd-amenity-icon">
+                  <i class="fa-solid fa-elevator"></i>
+                </div>
+                <h4>Lift</h4>
+                <p>Available</p>
               </div>
-              <h4>Lift</h4>
-              <p>Available</p>
             </div>
           </div>
         </div>
@@ -331,7 +393,7 @@
           </div>
         </div>
         <!-- FLOOR PLAN SECTION -->
-        <div class="pd-floor-section">
+        <div class="pd-floor-section px-3 px-md-4">
           <h2 class="pd-section-title">Floor Plan</h2>
 
           <!-- IMAGE -->
@@ -342,12 +404,14 @@
           </div>
 
           <!-- BUTTONS -->
-          <div class="pd-floor-actions">
-            <button class="pd-floor-btn">
+          <div class="pd-floor-actions row g-2">
+            <button class="pd-floor-btn py-1 py-md-2 px-1">
               <i class="fa-solid fa-download"></i> Download Floor Plan
             </button>
 
-            <button class="pd-floor-btn" onclick="printDetails()">
+            <button
+              class="pd-floor-btn py-1 py-md-2 px-1"
+              onclick="printDetails()">
               <i class="fa-solid fa-print"></i> Print Details
             </button>
           </div>
@@ -490,7 +554,7 @@
           </div>
         </div>
 
-        <div class="pd-card pd-emi-card">
+        <div class="pd-card pd-emi-card w-100">
           <h3 class="pd-card-title">
             <i class="fa-solid fa-arrow-trend-up"></i> EMI Calculator
           </h3>
@@ -545,7 +609,7 @@
           </div>
         </div>
 
-        <div class="pd-card pd-safety-card">
+        <div class="pd-card pd-safety-card w-100">
           <h3 class="pd-safety-title">
             <i class="fa-solid fa-shield"></i>Safety Tips
           </h3>
@@ -570,7 +634,7 @@
           </ul>
         </div>
 
-        <button class="pd-report-btn">
+        <button class="pd-report-btn w-100">
           <i class="fa-regular fa-flag"></i> Report this Property
         </button>
       </div>
@@ -578,9 +642,9 @@
 
     <div class="sim-property">
       <h1>Similar Properties You May Like</h1>
-      <div class="property-grid">
+      <div class="property-grid row g-0">
         <!-- Card 1 -->
-        <div class="listing-card col card">
+        <div class="listing-card col card col-12 col-sm-6 col-md-4 col-lg-3">
           <div class="image-box">
             <img
               src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWxzfGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
@@ -622,10 +686,10 @@
             <br />
 
             <div class="actions">
-              <button class="view">
+              <button class="view py-1 py-md-2">
                 <a href="../pages/details.html">View Details</a>
               </button>
-              <button class="contact">
+              <button class="contact py-1 py-md-2">
                 <i class="fa-solid fa-phone"></i>&nbsp; Contact
               </button>
             </div>
@@ -633,7 +697,7 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="listing-card col card">
+        <div class="listing-card col card col-12 col-sm-6 col-md-4 col-lg-3">
           <div class="image-box">
             <img
               src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWxzfGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
@@ -675,10 +739,10 @@
             <br />
 
             <div class="actions">
-              <button class="view">
+              <button class="view py-1 py-md-2">
                 <a href="../pages/details.html">View Details</a>
               </button>
-              <button class="contact">
+              <button class="contact py-1 py-md-2">
                 <i class="fa-solid fa-phone"></i>&nbsp; Contact
               </button>
             </div>
@@ -686,7 +750,7 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="listing-card col card">
+        <div class="listing-card col card col-12 col-sm-6 col-md-4 col-lg-3">
           <div class="image-box">
             <img
               src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWxzfGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
@@ -726,11 +790,11 @@
             </div>
             <br />
             <div class="actions">
-              <button class="view">
+              <button class="view py-1 py-md-2">
                 <a href="../pages/details.html">View Details</a>
               </button>
               <button class="contact">
-                <i class="fa-solid fa-phone"></i>&nbsp; Contact
+                <i class="fa-solid fa-phone py-1 py-md-2"></i>&nbsp; Contact
               </button>
             </div>
           </div>
@@ -823,10 +887,7 @@ I'm interested in the property: Luxury 4 BHK Builder Floor with Terrace at Great
             <img src="../assets/images/icon_2.png" alt="logo" /> BuilderFloor.in
           </h2>
 
-          <p class="tagline">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your
-            Property Partner
-          </p>
+          <p class="tagline">Your Property Partner</p>
 
           <p class="footer-desc">
             India's most trusted platform for builder floors, apartments, and
@@ -834,20 +895,24 @@ I'm interested in the property: Luxury 4 BHK Builder Floor with Terrace at Great
             across major cities.
           </p>
 
-          <p><i class="fa-solid fa-phone"></i> +91-9876543210</p>
+          <p class="footer-contact">
+            <i class="fa-solid fa-phone"></i> +91-9876543210
+          </p>
           <br />
-          <p><i class="fa-solid fa-envelope"></i> contact@builderfloor.in</p>
+          <p class="footer-email">
+            <i class="fa-solid fa-envelope"></i> contact@builderfloor.in
+          </p>
           <br />
-          <p>
+          <p class="footer-location">
             <i class="fa-solid fa-location-dot"></i>
             Connaught Place, New Delhi - 110001, India
           </p>
         </div>
 
         <!-- Quick Links -->
-        <div class="footer-col">
-          <h3>Quick Links</h3>
-          <ul>
+        <div class="footer-col col-12 col-md-10 text-start">
+          <h3 class="text-start">Quick Links</h3>
+          <ul class="list-unstyled ps-0">
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Terms & Conditions</a></li>
@@ -857,9 +922,9 @@ I'm interested in the property: Luxury 4 BHK Builder Floor with Terrace at Great
         </div>
 
         <!-- Property Types -->
-        <div class="footer-col">
+        <div class="footer-col col-12 col-md-10 text-start">
           <h3>Property Types</h3>
-          <ul>
+          <ul class="list-unstyled ps-0">
             <li><a href="#">Builder Floors</a></li>
             <li><a href="#">Apartments</a></li>
             <li><a href="#">Independent Houses</a></li>
@@ -869,9 +934,9 @@ I'm interested in the property: Luxury 4 BHK Builder Floor with Terrace at Great
         </div>
 
         <!-- Popular Cities -->
-        <div class="footer-col">
+        <div class="footer-col col-12 col-md-10 text-start">
           <h3>Popular Cities</h3>
-          <ul>
+          <ul class="list-unstyled ps-0">
             <li><a href="#">Delhi NCR</a></li>
             <li><a href="#">Mumbai</a></li>
             <li><a href="#">Bangalore</a></li>
@@ -1123,155 +1188,14 @@ I'm interested in the property: Luxury 4 BHK Builder Floor with Terrace at Great
 
     <script src="../assets/js/script.js"></script>
 
-    <script>
-      const pdImages = [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1175&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://plus.unsplash.com/premium_photo-1661915661139-5b6a4e4a6fcc?q=80&w=1267&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      ];
-
-      let pdIndex = 0;
-
-      const pdMainImg = document.getElementById("pdMainImg");
-      const pdCurrent = document.getElementById("pdCurrent");
-      const pdTotal = document.getElementById("pdTotal");
-
-      pdTotal.innerText = pdImages.length;
-
-      function pdUpdate() {
-        pdMainImg.src = pdImages[pdIndex];
-        pdCurrent.innerText = pdIndex + 1;
-
-        document.querySelectorAll(".pd-thumbnails img").forEach((img, i) => {
-          img.classList.toggle("active", i === pdIndex);
-        });
-      }
-
-      function pdNext() {
-        pdIndex = (pdIndex + 1) % pdImages.length;
-        pdUpdate();
-      }
-
-      function pdPrev() {
-        pdIndex = (pdIndex - 1 + pdImages.length) % pdImages.length;
-        pdUpdate();
-      }
-
-      function pdSet(i) {
-        pdIndex = i;
-        pdUpdate();
-      }
-
-      function toggleLike(btn) {
-        const icon = btn.querySelector("i");
-
-        btn.classList.toggle("active");
-
-        // switch icon style
-        if (btn.classList.contains("active")) {
-          icon.classList.remove("fa-regular");
-          icon.classList.add("fa-solid");
-        } else {
-          icon.classList.remove("fa-solid");
-          icon.classList.add("fa-regular");
-        }
-      }
-
-      function printDetails() {
-        window.print();
-      }
-
-      // Coordinates for Greater Kailash-1, Delhi
-      const lat = 28.5494;
-      const lng = 77.2425;
-
-      const map = L.map("pd-map").setView([lat, lng], 14);
-
-      // Tile Layer
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: "&copy; OpenStreetMap contributors",
-      }).addTo(map);
-
-      // Marker
-      L.marker([lat, lng])
-        .addTo(map)
-        .bindPopup("Greater Kailash-1, South Delhi")
-        .openPopup();
-
-      const loan = document.getElementById("loan");
-      const rate = document.getElementById("rate");
-      const tenure = document.getElementById("tenure");
-
-      const emiText = document.getElementById("emi");
-      const interestText = document.getElementById("interest");
-      const totalText = document.getElementById("total");
-
-      const loanVal = document.getElementById("loanVal");
-      const rateVal = document.getElementById("rateVal");
-      const tenureVal = document.getElementById("tenureVal");
-
-      /* FORMAT FOR EMI (AUTO LAKH / CR) */
-      function formatCurrency(num) {
-        if (num >= 10000000) return "₹" + (num / 10000000).toFixed(2) + " Cr";
-        if (num >= 100000) return "₹" + (num / 100000).toFixed(2) + " Lakh";
-        return "₹" + num.toFixed(0);
-      }
-
-      /* FORCE CRORE FORMAT (FOR TOTAL + INTEREST) */
-      function formatCrore(num) {
-        return "₹" + (num / 10000000).toFixed(2) + " Cr";
-      }
-
-      /* EMI CALCULATION */
-      function calculateEMI() {
-        let P = parseFloat(loan.value); // Loan Amount
-        let r = parseFloat(rate.value) / 12 / 100; // Monthly Interest
-        let n = parseFloat(tenure.value) * 12; // Months
-
-        let emi = (P * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
-        let total = emi * n;
-        let interest = total - P;
-
-        /* UPDATE UI */
-        emiText.innerText = formatCurrency(emi);
-        interestText.innerText = formatCrore(interest);
-        totalText.innerText = formatCrore(total);
-
-        loanVal.innerText = formatCurrency(P);
-        rateVal.innerText = rate.value + "%";
-        tenureVal.innerText = tenure.value + " Years";
-      }
-
-      /* EVENTS */
-      loan.addEventListener("input", calculateEMI);
-      rate.addEventListener("input", calculateEMI);
-      tenure.addEventListener("input", calculateEMI);
-
-      /* INITIAL CALL */
-      calculateEMI();
-
-      // ------------------------------------------------------------------
-
-      function openMessageModal() {
-        document.getElementById("pdMessageModal").classList.add("active");
-        document.body.style.overflow = "hidden"; // lock
-      }
-
-      function openVisitModal() {
-        document.getElementById("pdVisitModal").classList.add("active");
-        document.body.style.overflow = "hidden"; // lock
-      }
-
-      function closeModal() {
-        document.querySelectorAll(".pd-modal").forEach((modal) => {
-          modal.classList.remove("active");
-        });
-
-        document.body.style.overflow = ""; // ✅ unlock
-      }
-    </script>
+    <script src="../assets/js/details.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"></script>
   </body>
 </html>
