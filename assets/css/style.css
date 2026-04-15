@@ -1760,6 +1760,7 @@ ul li {
   font-weight: 600;
   display: flex;
   gap: 8px;
+  align-items: center;
 }
 
 .social-btn i {
